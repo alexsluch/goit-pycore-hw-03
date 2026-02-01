@@ -14,6 +14,7 @@ def get_days_from_today(date_string):
     except ValueError:
         return "wrong date format"
 
+print("\nTASK #1")
 print(get_days_from_today("2026-10-09"))
 
 
@@ -46,6 +47,7 @@ def get_numbers_ticket(min, max, quantity):
         return unique_numbers
 
 lottery_numbers = get_numbers_ticket(1, 49, 6)
+print("\nTASK #2")
 print("Ваші лотерейні числа:", lottery_numbers)
 
 
@@ -70,6 +72,8 @@ raw_numbers = [
 ]
 
 sanitized_numbers = [normalize_phone(num) for num in raw_numbers]
+
+print("\nTASK #3")
 print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
 
 
@@ -113,4 +117,6 @@ users = [
     {"name": "Jane Smith", "birthday": "1990.01.27"}
 ]
 upcoming_birthdays = get_upcoming_birthdays(users)
+
+print("\nTASK #4")
 print("Список привітань на цьому тижні:", upcoming_birthdays)
