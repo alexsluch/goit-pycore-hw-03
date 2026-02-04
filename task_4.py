@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 
 def get_upcoming_birthdays(users : list) -> list:
     """
@@ -11,7 +11,7 @@ def get_upcoming_birthdays(users : list) -> list:
     Returns:
         List of dicts with "name" and "congratulation_date".
     """
-    today = datetime.today().date()
+    today = date.today()
 
     result = []
 
