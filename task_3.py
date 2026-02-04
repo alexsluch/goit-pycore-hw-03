@@ -13,6 +13,7 @@ def normalize_phone(phone: str) -> str:
     phone = re.sub(r"\D", "", phone)
     return "+" + phone if phone.startswith("38") else "+38" + phone
 
+
 if __name__ == "__main__":
 
     raw_numbers = [

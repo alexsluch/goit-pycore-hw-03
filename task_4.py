@@ -40,6 +40,7 @@ def get_upcoming_birthdays(users : list) -> list:
 
     return result
 
+
 if __name__ == "__main__":
 
     users = [
